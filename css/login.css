@@ -1,0 +1,152 @@
+#header{
+    width: 100%;
+    height: 64px;
+    /*border-bottom: 1px solid #000;*/
+    box-shadow: 2px 3px 10px #e4e4e4;
+}
+.headerH{
+    height: 64px;
+    line-height: 64px;
+}
+.headerlog{
+    width: 197px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin-left: 50px;
+}
+.headerH img{
+    width: 167px;
+    height: 40px;
+}
+.mainB{
+    /*height: 720px;*/
+    margin-bottom: 70px;
+}
+.mainB1{
+    width: 670px;
+    height: 720px;
+    margin: 0 auto;
+    /*border: 1px solid #000;*/
+}
+.mainB1 h3{
+    font-size: 24px;
+    color: #ca0b03;
+    margin: 24px 0;
+}
+.mainT{
+    width: 670px;
+    height: 510px;
+    background-color: #f8f9fb;
+    border-top: 10px solid #ca0b03;
+    border-radius: 5px;
+}
+.mainT_1{
+    height: 340px;
+    width: 435px;
+    border-bottom: 2px solid #e9e9e9;
+    color: #333;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.mainT_1_T1{
+    width: 435px;
+    height: 55px;
+    margin: 50px 0;
+    position: relative;
+}
+.mainT_1_T1 input{
+    width: 435px;
+    height: 55px;
+    font-size: 16px;
+    border: 2px solid #e9e9e9;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding-left: 60px;
+}
+#btn{
+    width: 435px;
+    height: 47px;
+    background-color: #af2d2d;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: #cd3333;
+}
+.mainT_1_p{
+    height: 30px;
+    margin-top: 28px;
+    text-align: right;
+
+}
+.mainT_1_p a{
+    margin-left: 15px;
+    color: #0066ff;
+}
+
+.mainT_1_T1 span{
+    width: 50px;
+    height: 51px;
+    display: block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+.main_S1{
+    background: url("../img/uesr-hui.jpg") no-repeat center center;
+    background-size: 100% 100%;
+}
+.main_S2{
+    background: url("../img/powss.jpg") no-repeat center center;
+    background-size: 100% 100%;
+}
+.mainT_2{
+    color: #666;
+    padding-top: 10px;
+}
+.mainT_p1{
+    width: 440px;
+    margin-top: 10px;
+    margin-left: 118px;
+    line-height: 26px;
+}
+
+.mainT_p2 a{
+    color: #333;
+    text-decoration: underline;
+}
+.mainT_pt{
+    width: 460px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.mainT_pt img{
+    margin-left:15px;
+}
+
+
+#foot{
+    width: 100%;
+    height: 64px;
+    background-color: #e1e1e1;
+}
+.footT{
+    height: 64px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #626262;
+    line-height: 64px;
+    text-align: center;
+}
