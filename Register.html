@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>创建网站账号-华为</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/Register.css"/>
+</head>
+<body>
+<div id="header">
+    <div class="headerH w">
+        <div class="headerlog">
+            <img src="img/logo.png" alt=""/>
+        </div>
+    </div>
+</div>
+<div id="main">
+    <div class="mainB w">
+        <div class="mainB1">
+            <h3>立即注册</h3>
+            <div class="mainT">
+                <div class="mainT_1">
+                    <p>现在就开始创建一个华为账号吧，填写以下信息即可。</p>
+                    <div class="mainT_1_T">
+                        <div class="mainT_1_T1">
+                            <label for="text">邮箱&nbsp
+                                <input type="text" id="text" class="input_text" name="username"/>
+                            </label>
+                            <div class="error"></div>
+                        </div>
+                        <div class="mainT_1_T1">
+                            <label for="psw">密码&nbsp
+                                <input type="password"  id="psw" class="input_text" />
+                            </label>
+                            <span id="btn_span">
+                                <img class="span_img1" src="img/SignUp_05.jpg" style="display:block" alt=""/>
+                                <img class="span_img2" src="img/SignUp_03.jpg" style="display:none" alt=""/>
+                            </span>
+                            <div class="error"></div>
+                        </div>
+                        <div class="mainT_1_T1">
+                            <label for="fam">&nbsp&nbsp&nbsp姓&nbsp
+                                <input type="text" id="fam" class="input_text" />
+                            </label>
+                            <div class="error"></div>
+                        </div>
+                        <div class="mainT_1_T1">
+                            <label for="nam">&nbsp&nbsp&nbsp名&nbsp
+                                <input type="text" id="nam" class="input_text" />
+                            </label>
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainT_2">
+                    <p class="mainT_p1">
+                        <input type="checkbox" checked/>
+                        我愿意接收华为为我推介的相关信息
+                    </p>
+                    <p class="mainT_p1">
+                        <input type="checkbox" checked/>
+                        我愿意接收华为信任的第三方合作伙伴为我推介的华为相关信息
+                    </p>
+                    <p class="mainT_p2">* 提交此表格表明你同意接受华为的<a href="">隐私保护条款</a>和<a href="">使用条款</a>.</p>
+                    <div class="mainT_pt">
+                        <label for="ttxx">验证码
+                            <input type="text" id="ttxx" />
+                        </label>
+                        <img src="img/VerificationCode.gif" alt=""/>
+                        <a href=""><img src="img/shuaxin.jpg" alt=""/></a>
+                    </div>
+                    <input type="button" id="btn" value="提交"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="foot">
+    <div class="footT">
+      <p>版权所有 © 华为技术有限公司 1998-2017。保留一切权利。</p>
+    </div>
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+    $(function () {
+        $("#btn_span").click(function () {
+            var $span_img1 = $(this).children(".span_img1").css("display");
+            var $span_img2 = $(this).children(".span_img2").css("display");
+            if ($span_img1 == "none") {
+                $(this).children(".span_img1").css("display", "block")
+            } else {
+                $(this).siblings("label").children().css("")
+                $(this).children(".span_img1").css("display", "none");
+
+            }
+//            if ($span_img2 == "none") {
+//                $(this).children(".span_img2").css("display", "block")
+//            } else {
+//                $(this).children(".span_img2").css("display", "none")
+//            }
+        })
+        //点击输入框发生事件
+        $(".input_text").focus(function () {
+            $(this).css("borderColor", "#cd3335")
+        })
+        $(".input_text").blur(function () {
+            $(this).css({"borderColor": ""});
+        })
+        $("#text").blur(function(){
+            var $text=$(this).val();
+            if($text==""){
+                $(this).css({"borderColor": "red",borderStyle:"dashed"});
+                $(this).parents().siblings(".error").show().html("邮箱不能为空");
+            }else{
+                $(this).css({"borderColor": "",borderStyle:""});
+                $(this).parents().siblings(".error").hide();
+            }
+        })
+        $("#psw").blur(function(){
+            var $text=$(this).val();
+            if($text==""){
+                $(this).css({"borderColor": "red",borderStyle:"dashed"});
+                $(this).parents().siblings(".error").show().html("密码不能为空");
+            }else{
+                $(this).css({"borderColor": "",borderStyle:""});
+                $(this).parents().siblings(".error").hide();
+            }
+        })
+        $("#fam").blur(function(){
+            var $text=$(this).val();
+            if($text==""){
+                $(this).css({"borderColor": "red",borderStyle:"dashed"});
+        $(this).parents().siblings(".error").show().html("姓不能为空");
+            }else{
+                $(this).css({"borderColor": "",borderStyle:""});
+                $(this).parents().siblings(".error").hide();
+            }
+        })
+        $("#nam").blur(function(){
+            var $text=$(this).val();
+            if($text==""){
+                $(this).css({"borderColor": "red",borderStyle:"dashed"});
+        $(this).parents().siblings(".error").show().html("名不能为空");
+            }else{
+                $(this).css({"borderColor": "",borderStyle:""});
+                $(this).parents().siblings(".error").hide();
+            }
+        })
+
+
+    })
+</script>
+</body>
+</html>
